@@ -457,7 +457,6 @@ footer {
 
 <div id="progress-bar"></div>
 
-<!-- HEADER -->
 <header>
   <div class="header-left">
     <button class="hamburger" id="hamburger" aria-label="Toggle sidebar">
@@ -472,7 +471,6 @@ footer {
   </div>
 </header>
 
-<!-- SIDEBAR -->
 <nav id="sidebar">
   <div class="sidebar-inner">
     <div class="sidebar-section-title">Getting Started</div>
@@ -503,10 +501,8 @@ footer {
 
 <div id="overlay"></div>
 
-<!-- MAIN -->
 <main id="main">
 
-<!-- ═══════════════════════ INTRODUCTION ═══════════════════════ -->
 <section class="section s-intro" id="intro">
   <div class="section-header">
     <div class="section-icon">🚀</div>
@@ -530,6 +526,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Why Learn C++?</div>
+    <p>C++ teaches you how programs really work behind the scenes. When you study it, you learn about memory, speed, data structures, and problem solving in a deeper way than many beginner-friendly languages.</p>
+    <p>This makes C++ not only useful by itself, but also a strong foundation for learning other languages and advanced computer science topics later.</p>
     <div class="grid-3">
       <div class="card">
         <div class="card-title">⚡ Speed & Performance</div>
@@ -560,6 +558,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Where is C++ Used?</div>
+    <p>C++ is used in systems where speed, efficiency, and reliability matter. You will often find it in software that interacts closely with hardware or must process huge amounts of data very quickly.</p>
+    <p>The table below gives examples of real areas where C++ is still one of the strongest choices.</p>
     <div class="table-wrap">
       <table>
         <tr><th>Domain</th><th>Examples</th></tr>
@@ -579,7 +579,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ BASICS ═══════════════════════ -->
 <section class="section s-basics" id="basics">
   <div class="section-header">
     <div class="section-icon">📦</div>
@@ -592,6 +591,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Hello World</div>
     <p>Every C++ program starts with a <code>main()</code> function. This is the entry point the OS calls when your program runs.</p>
+    <p>In this example, <code>#include &lt;iostream&gt;</code> gives access to input and output tools, and <code>cout</code> prints text to the screen. The line <code>return 0;</code> tells the system the program finished successfully.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;iostream&gt;</span>
@@ -607,6 +607,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Variables & Data Types</div>
     <p>Variables store data in memory. Every variable has a type that defines what kind of data it holds.</p>
+    <p>Choosing the right data type matters because it affects memory usage, allowed operations, and the range of values the variable can store. For example, <code>int</code> is for whole numbers, while <code>double</code> is for decimal values.</p>
     <div class="table-wrap">
       <table>
         <tr><th>Type</th><th>Size</th><th>Range / Use</th><th>Example</th></tr>
@@ -640,6 +641,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Constants</div>
     <p>Constants are values that cannot change. Use <code>const</code> or <code>#define</code>.</p>
+    <p>We use constants when a value should stay fixed during the whole program, like PI or a maximum array size. This improves readability and helps avoid accidental changes.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="kw">const</span> <span class="typ">double</span> <span class="var">PI</span>     = <span class="num">3.14159265</span>;
@@ -653,6 +655,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Input & Output</div>
+    <p>Input and output let the program communicate with the user. In C++, <code>cin</code> is used to read data from the keyboard, and <code>cout</code> is used to display results on the screen.</p>
+    <p>In the example below, the user enters two numbers, then the program calculates and prints their sum and product.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;iostream&gt;</span>
@@ -672,6 +676,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Operators</div>
+    <p>Operators are symbols that perform operations on values and variables. They are used in calculations, comparisons, logical tests, and updating variable values.</p>
+    <p>Understanding operators is important because they appear in almost every line of code, especially inside conditions, loops, and formulas.</p>
     <div class="grid-2">
       <div class="card">
         <div class="card-title">Arithmetic</div>
@@ -694,6 +700,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Comments</div>
+    <p>Comments are notes written for humans, not for the compiler. They help explain the purpose of code, document functions, or temporarily disable lines during testing.</p>
+    <p>Good comments explain why something is done, not only what is done. Clear naming plus short useful comments makes code easier to maintain.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Single-line comment</span>
@@ -712,7 +720,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ CONDITIONS ═══════════════════════ -->
 <section class="section s-conditions" id="conditions">
   <div class="section-header">
     <div class="section-icon">🔀</div>
@@ -724,6 +731,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">if / else if / else</div>
+    <p>Conditional statements allow the program to choose between different actions depending on whether a condition is true or false.</p>
+    <p>In this example, the program checks the score step by step and prints the correct grade. The first matching condition runs, and the rest are skipped.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">score</span> = <span class="num">85</span>;
@@ -742,6 +751,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Nested if</div>
+    <p>A nested <code>if</code> means placing one condition inside another. This is useful when a second decision should only happen after the first condition is already true.</p>
+    <p>The ternary operator at the bottom is a short one-line way to write a simple condition and assign one of two values.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">age</span> = <span class="num">20</span>;
@@ -765,6 +776,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Switch Case</div>
     <p>Use <code>switch</code> when comparing one variable against multiple constant values — cleaner than long if-else chains.</p>
+    <p>It is especially useful when you have many exact choices, such as days, menu options, or command numbers. Each <code>case</code> handles one value.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">day</span> = <span class="num">3</span>;
@@ -783,7 +795,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ LOOPS ═══════════════════════ -->
 <section class="section s-loops" id="loops">
   <div class="section-header">
     <div class="section-icon">🔁</div>
@@ -795,6 +806,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">for Loop</div>
+    <p>A <code>for</code> loop is commonly used when you know in advance how many times you want to repeat something.</p>
+    <p>The classic form has three parts: starting value, condition, and update. The range-based form is cleaner when you want to visit each element in a container like a vector.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Classic for loop</span>
@@ -812,6 +825,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">while Loop</div>
+    <p>A <code>while</code> loop is used when repetition depends on a condition rather than a fixed count. It keeps running as long as the condition remains true.</p>
+    <p>It is very useful for reading input until a stop condition happens, or for repeated processes where you do not know the number of iterations beforehand.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">n</span> = <span class="num">1</span>;
@@ -826,6 +841,7 @@ footer {
   <div class="topic">
     <div class="topic-title">do…while Loop</div>
     <p>Executes the body <em>at least once</em>, then checks the condition.</p>
+    <p>This is helpful when you want the user to enter something at least one time before the program decides whether to repeat or stop.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">num</span>;
@@ -838,6 +854,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Nested Loops</div>
+    <p>Nested loops mean putting one loop inside another. They are often used with tables, grids, matrices, and patterns.</p>
+    <p>Usually, the outer loop controls rows and the inner loop controls columns or repeated work inside each row.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Multiplication table</span>
@@ -855,6 +873,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">break & continue</div>
+    <p><code>break</code> and <code>continue</code> help control loop behavior. They are useful when you want to stop early or skip specific iterations.</p>
+    <p><code>break</code> exits the entire loop immediately, while <code>continue</code> skips the current iteration and moves to the next one.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// break — exits the loop entirely</span>
@@ -872,7 +892,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ FUNCTIONS ═══════════════════════ -->
 <section class="section s-functions" id="functions">
   <div class="section-header">
     <div class="section-icon">⚙️</div>
@@ -884,6 +903,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Function Declaration & Definition</div>
+    <p>Functions help you organize code into reusable parts. Instead of repeating the same logic many times, you write it once and call it whenever needed.</p>
+    <p>A declaration tells the compiler that the function exists, while the definition contains the actual code of the function.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Declaration (prototype)</span>
@@ -903,6 +924,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Parameters & Return Values</div>
+    <p>Parameters are inputs sent to a function, and the return value is what the function gives back after finishing its work.</p>
+    <p>This topic also shows the difference between passing by value and passing by reference. Passing by value copies the data, while passing by reference allows the function to modify the original variable.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Pass by value  — copy is made</span>
@@ -925,6 +948,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Function Overloading</div>
     <p>Same function name, different parameter types or counts.</p>
+    <p>This lets you reuse a meaningful function name while still supporting different kinds of input. The compiler chooses the correct version based on the arguments you pass.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span>    <span class="fn">area</span>(<span class="typ">int</span> <span class="var">side</span>)                  { <span class="kw">return</span> <span class="var">side</span> <span class="op">*</span> <span class="var">side</span>; }
@@ -939,6 +963,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Recursion</div>
+    <p>Recursion means a function calls itself to solve smaller versions of the same problem.</p>
+    <p>It is powerful for problems like factorial, Fibonacci, trees, divide-and-conquer algorithms, and backtracking. The most important rule is to always have a base case that stops the recursion.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Factorial: n! = n × (n-1)!</span>
@@ -960,7 +986,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ ARRAYS ═══════════════════════ -->
 <section class="section s-arrays" id="arrays">
   <div class="section-header">
     <div class="section-icon">📋</div>
@@ -972,6 +997,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">1D Arrays</div>
+    <p>A one-dimensional array stores multiple values of the same type in consecutive memory locations.</p>
+    <p>Each element is accessed by its index, starting from <code>0</code>. Arrays are fast and simple, but their size is usually fixed once declared.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">arr</span>[<span class="num">5</span>] = {<span class="num">10</span>, <span class="num">20</span>, <span class="num">30</span>, <span class="num">40</span>, <span class="num">50</span>};
@@ -991,6 +1018,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">2D Arrays</div>
+    <p>A two-dimensional array is like a table with rows and columns. It is commonly used for matrices, game boards, and grid-based problems.</p>
+    <p>To access an element, you need two indices: one for the row and one for the column.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">matrix</span>[<span class="num">3</span>][<span class="num">3</span>] = {
@@ -1009,6 +1038,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Searching & Sorting</div>
+    <p>Searching means finding whether a value exists and where it is located. Sorting means arranging elements in increasing or decreasing order.</p>
+    <p>These are core skills in programming because many efficient algorithms depend on sorted data, especially binary search.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;algorithm&gt;</span>
@@ -1032,7 +1063,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ STRINGS ═══════════════════════ -->
 <section class="section s-strings" id="strings">
   <div class="section-header">
     <div class="section-icon">🔤</div>
@@ -1044,6 +1074,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">String Basics</div>
+    <p>A <code>string</code> stores text as a sequence of characters. It is much easier and safer to use than old-style character arrays in most cases.</p>
+    <p>You can access individual characters, join strings together, and use built-in functions like <code>length()</code> and <code>empty()</code>.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;string&gt;</span>
@@ -1060,6 +1092,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">getline & cin</div>
+    <p><code>cin &gt;&gt;</code> reads input only until the first space, while <code>getline()</code> reads a whole line including spaces.</p>
+    <p>This matters when reading full names, sentences, or paragraphs. The call to <code>cin.ignore()</code> clears the leftover newline before using <code>getline()</code>.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="var">string</span> <span class="var">name</span>;
@@ -1072,6 +1106,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Useful String Functions</div>
+    <p>C++ strings come with many helpful functions for cutting, searching, replacing, deleting, and converting text.</p>
+    <p>Learning these built-in tools saves time and helps you write shorter, clearer solutions instead of manually processing every character.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="var">string</span> <span class="var">s</span> = <span class="str">"Hello, World!"</span>;
@@ -1093,6 +1129,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Common String Problems</div>
+    <p>String questions are very common in interviews and programming contests. They often test indexing, loops, conditions, and built-in string functions together.</p>
+    <p>The examples below show two classic problems: checking whether a word reads the same forward and backward, and counting vowels in a sentence.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Check palindrome</span>
@@ -1115,7 +1153,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ POINTERS ═══════════════════════ -->
 <section class="section s-pointers" id="pointers">
   <div class="section-header">
     <div class="section-icon">👆</div>
@@ -1127,6 +1164,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Pointer Basics</div>
+    <p>A pointer is a variable that stores the memory address of another variable. This gives C++ strong low-level control over memory and data access.</p>
+    <p>The operator <code>&amp;</code> gets the address of a variable, while <code>*</code> is used to access the value stored at that address. This process is called dereferencing.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span>  <span class="var">x</span>   = <span class="num">10</span>;
@@ -1144,6 +1183,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Dynamic Memory</div>
+    <p>Dynamic memory is memory created أثناء تشغيل البرنامج using <code>new</code>. It is stored on the heap and remains there until you free it with <code>delete</code>.</p>
+    <p>This is useful when the needed size is unknown at compile time, but it must be managed carefully to avoid leaks.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Allocate single int on heap</span>
@@ -1162,6 +1203,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Pointers with Arrays</div>
+    <p>The name of an array can often behave like a pointer to its first element. This is why pointer arithmetic can move through array elements.</p>
+    <p>When you add <code>1</code> to a pointer, it moves to the next element of that data type, not just one byte.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="var">arr</span>[] = {<span class="num">10</span>, <span class="num">20</span>, <span class="num">30</span>};
@@ -1178,7 +1221,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ OOP ═══════════════════════ -->
 <section class="section s-oop" id="oop">
   <div class="section-header">
     <div class="section-icon">🏗️</div>
@@ -1190,6 +1232,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Classes & Objects</div>
+    <p>A class is a blueprint, and an object is a real instance created from that blueprint. Classes group related data and functions together.</p>
+    <p>In this example, the class <code>Car</code> contains properties like brand and speed, plus a function that changes the speed.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="kw">class</span> <span class="typ">Car</span> {
@@ -1214,6 +1258,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Constructors & Destructors</div>
+    <p>A constructor runs automatically when an object is created, and a destructor runs automatically when the object is destroyed.</p>
+    <p>Constructors are often used to initialize values, while destructors are useful for cleanup tasks like freeing resources or closing files.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="kw">class</span> <span class="typ">Student</span> {
@@ -1243,6 +1289,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Inheritance</div>
+    <p>Inheritance allows one class to reuse and extend another class. This helps build code that is more organized and less repetitive.</p>
+    <p>With <code>virtual</code> functions, C++ supports polymorphism, which means the same function call can behave differently depending on the actual object type.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="kw">class</span> <span class="typ">Animal</span> {
@@ -1269,7 +1317,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ STL ═══════════════════════ -->
 <section class="section s-stl" id="stl">
   <div class="section-header">
     <div class="section-icon">📚</div>
@@ -1281,6 +1328,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">vector — Dynamic Array</div>
+    <p><code>vector</code> is one of the most important STL containers. It works like an array but can grow and shrink automatically.</p>
+    <p>Because it is flexible and easy to use, it is often preferred over normal arrays in modern C++ programs.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;vector&gt;</span>
@@ -1295,6 +1344,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">map, set, pair</div>
+    <p>These STL tools solve different common problems. A <code>map</code> stores key-value pairs, a <code>set</code> stores unique sorted values, and a <code>pair</code> groups two values together.</p>
+    <p>They are widely used in contests and real applications because they save time and provide efficient built-in operations.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;map&gt;</span>
@@ -1320,6 +1371,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">stack, queue, priority_queue, deque</div>
+    <p>These containers are designed for specific access patterns. Each one is useful in different algorithms and problem types.</p>
+    <p>A stack works last-in first-out, a queue works first-in first-out, and a priority queue always gives you the highest-priority element first.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;stack&gt;</span>
@@ -1350,6 +1403,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Common STL Algorithms</div>
+    <p>The STL also includes ready-made algorithms for sorting, reversing, summing, counting, and searching.</p>
+    <p>Using these algorithms is usually better than rewriting them from scratch because they are tested, optimized, and easy to read.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;algorithm&gt;</span>
@@ -1369,7 +1424,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ COMPETITIVE PROGRAMMING ═══════════════════════ -->
 <section class="section s-cp" id="cp">
   <div class="section-header">
     <div class="section-icon">🏆</div>
@@ -1382,6 +1436,7 @@ footer {
   <div class="topic">
     <div class="topic-title">Fast I/O</div>
     <p>These two lines can cut I/O time by 5–10x — essential for large inputs.</p>
+    <p>They reduce the overhead between C and C++ input/output systems and prevent automatic flushing between <code>cin</code> and <code>cout</code>.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="typ">int</span> <span class="fn">main</span>() {
@@ -1394,6 +1449,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Time Complexity Guide</div>
+    <p>Time complexity helps you estimate whether an algorithm will finish within the contest time limit.</p>
+    <p>The table below gives a practical idea of what complexity is usually acceptable for different input sizes.</p>
     <div class="table-wrap">
       <table>
         <tr><th>n</th><th>Max Complexity</th><th>Algorithm Examples</th></tr>
@@ -1410,6 +1467,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Common Tricks</div>
+    <p>Competitive programming often depends on small but important tricks that save time and prevent common mistakes.</p>
+    <p>Examples include using <code>long long</code> for large numbers, built-in math helpers, and bit operations for special checks.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="cmt">// Integer overflow — use long long!</span>
@@ -1432,12 +1491,14 @@ footer {
 <span class="fn">abs</span>(<span class="op">-</span><span class="num">42</span>);                <span class="cmt">// 42</span>
 
 <span class="cmt">// Check if power of 2</span>
-<span class="typ">bool</span> <span class="fn">isPow2</span>(<span class="typ">int</span> <span class="var">n</span>) { <span class="kw">return</span> <span class="var">n</span> <span class="op">&amp;</span> (<span class="var">n</span><span class="op">-</span><span class="num">1</span>) <span class="op">==</span> <span class="num">0</span>; }</pre>
+<span class="typ">bool</span> <span class="fn">isPow2</span>(<span class="typ">int</span> <span class="var">n</span>) { <span class="kw">return</span> <span class="var">n</span> <span class="op">&amp;</span> ((<span class="var">n</span><span class="op">-</span><span class="num">1</span>) <span class="op">==</span> <span class="num">0</span>); }</pre>
     </div>
   </div>
 
   <div class="topic">
     <div class="topic-title">Contest Template</div>
+    <p>A contest template is a ready-made code structure that helps you start solving quickly during competitions.</p>
+    <p>It usually includes fast I/O, type aliases, common macros, constants, and a <code>solve()</code> function to keep the code organized.</p>
     <div class="code-block">
       <div class="code-header"><span class="code-lang">C++</span><button class="copy-btn">Copy</button></div>
       <pre><span class="pp">#include</span> <span class="str">&lt;bits/stdc++.h&gt;</span>
@@ -1472,6 +1533,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">Debugging Tips</div>
+    <p>Debugging is a key skill in contests because many submissions fail due to small mistakes, not hard algorithms.</p>
+    <p>The cards below summarize the most common verdicts and what you should check first when they happen.</p>
     <div class="grid-2">
       <div class="card">
         <div class="card-title">🐛 Runtime Error (RE)</div>
@@ -1493,7 +1556,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ PRACTICE ═══════════════════════ -->
 <section class="section s-practice" id="practice">
   <div class="section-header">
     <div class="section-icon">💪</div>
@@ -1505,6 +1567,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">🟢 Beginner Problems</div>
+    <p>These problems focus on fundamentals like printing, arithmetic, conditions, loops, and basic strings.</p>
+    <p>If you are still learning the syntax, start here and solve them without looking at the answer too early.</p>
     <div class="problem-list">
       <div class="problem-item"><span class="problem-num">#01</span><span class="problem-name">Hello, World!</span><span class="badge easy">Easy</span><span class="problem-tag">Output</span></div>
       <div class="problem-item"><span class="problem-num">#02</span><span class="problem-name">Sum of Two Numbers</span><span class="badge easy">Easy</span><span class="problem-tag">Math</span></div>
@@ -1521,6 +1585,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">🟡 Intermediate Problems</div>
+    <p>These problems usually combine more than one idea together, such as arrays plus searching, or strings plus data structures.</p>
+    <p>At this level, focus on writing cleaner solutions and thinking about time complexity, not only getting the answer.</p>
     <div class="problem-list">
       <div class="problem-item"><span class="problem-num">#09</span><span class="problem-name">Sieve of Eratosthenes</span><span class="badge med">Medium</span><span class="problem-tag">Math / Arrays</span></div>
       <div class="problem-item"><span class="problem-num">#10</span><span class="problem-name">Binary Search</span><span class="badge med">Medium</span><span class="problem-tag">Search</span></div>
@@ -1536,6 +1602,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">🔴 Advanced Problems</div>
+    <p>Advanced problems test deeper algorithmic thinking, optimization, and experience with patterns like dynamic programming, graphs, and advanced data structures.</p>
+    <p>Do not rush into these too early. Build your base first, then come back here when the medium level starts to feel comfortable.</p>
     <div class="problem-list">
       <div class="problem-item"><span class="problem-num">#16</span><span class="problem-name">Longest Increasing Subsequence</span><span class="badge hard">Hard</span><span class="problem-tag">DP</span></div>
       <div class="problem-item"><span class="problem-num">#17</span><span class="problem-name">0/1 Knapsack Problem</span><span class="badge hard">Hard</span><span class="problem-tag">DP</span></div>
@@ -1546,7 +1614,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ QUIZ ═══════════════════════ -->
 <section class="section s-quiz" id="quiz">
   <div class="section-header">
     <div class="section-icon">🧠</div>
@@ -1554,6 +1621,12 @@ footer {
       <div class="section-title">C++ <span class="grad2">Quiz</span></div>
       <div class="section-subtitle">Test your knowledge</div>
     </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-title">How to Use the Quiz</div>
+    <p>This quiz is meant to help learners quickly check whether they understood the main ideas in the guide.</p>
+    <p>Each question covers a basic concept from syntax, OOP, STL, pointers, or loops. Try answering before scrolling back to review the lesson.</p>
   </div>
 
   <div class="quiz-item" data-answer="1">
@@ -1623,7 +1696,6 @@ footer {
   </div>
 </section>
 
-<!-- ═══════════════════════ RESOURCES ═══════════════════════ -->
 <section class="section s-resources" id="resources">
   <div class="section-header">
     <div class="section-icon">📖</div>
@@ -1635,6 +1707,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">📚 Best Books</div>
+    <p>Books are excellent when you want structured learning with strong explanations and carefully chosen examples.</p>
+    <p>The list below includes beginner-friendly resources, modern C++ references, and books useful for competitive programming.</p>
     <div class="resource-card">
       <div class="resource-icon">📘</div>
       <div>
@@ -1673,6 +1747,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">🎥 YouTube Channels</div>
+    <p>Video content is great for learners who prefer explanation by voice, live examples, and step-by-step walkthroughs.</p>
+    <p>These channels are helpful for different goals, from C++ fundamentals to algorithms and competitive programming.</p>
     <div class="grid-2">
       <div class="resource-card" style="margin:0">
         <div class="resource-icon">▶️</div>
@@ -1709,6 +1785,8 @@ footer {
 
   <div class="topic">
     <div class="topic-title">🌐 Websites & Platforms</div>
+    <p>Websites and coding platforms help you practice regularly, read references quickly, and track your progress over time.</p>
+    <p>Use reference sites when learning concepts, and practice platforms when you want to build speed and problem-solving ability.</p>
     <div class="grid-3">
       <div class="card">
         <div class="card-title">🟠 Codeforces</div>
@@ -1740,7 +1818,6 @@ footer {
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
@@ -1754,11 +1831,9 @@ footer {
   </div>
 </footer>
 
-<!-- BACK TO TOP -->
 <button id="back-top" aria-label="Back to top">↑</button>
 
 <script>
-// ─── PROGRESS BAR ───
 const bar = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
   const h = document.documentElement;
@@ -1766,14 +1841,12 @@ window.addEventListener('scroll', () => {
   bar.style.width = pct + '%';
 });
 
-// ─── BACK TO TOP ───
 const btt = document.getElementById('back-top');
 window.addEventListener('scroll', () => {
   btt.classList.toggle('show', window.scrollY > 400);
 });
 btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// ─── HAMBURGER ───
 const hamburger = document.getElementById('hamburger');
 const sidebar   = document.getElementById('sidebar');
 const overlay   = document.getElementById('overlay');
@@ -1786,7 +1859,6 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('show');
 });
 
-// ─── ACTIVE NAV ───
 const navLinks  = document.querySelectorAll('.nav-link');
 const sections  = document.querySelectorAll('.section');
 
@@ -1801,7 +1873,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { rootMargin: '-30% 0px -60% 0px' });
 sections.forEach(s => observer.observe(s));
 
-// ─── SECTION REVEAL ───
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
@@ -1809,7 +1880,6 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.06 });
 sections.forEach(s => revealObs.observe(s));
 
-// ─── COPY BUTTONS ───
 document.querySelectorAll('.copy-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const pre = btn.closest('.code-block').querySelector('pre');
@@ -1821,7 +1891,6 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   });
 });
 
-// ─── QUIZ ───
 document.querySelectorAll('.quiz-item').forEach(item => {
   const correct = parseInt(item.dataset.answer);
   const feedback = item.querySelector('.quiz-feedback');
@@ -1849,7 +1918,6 @@ document.querySelectorAll('.quiz-item').forEach(item => {
   });
 });
 
-// ─── SEARCH ───
 const searchData = [];
 document.querySelectorAll('.section').forEach(sec => {
   const sectionName = sec.querySelector('.section-title')?.innerText || '';
@@ -1892,7 +1960,6 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.search-wrap')) results.classList.remove('show');
 });
 
-// ─── SIDEBAR CLOSE ON NAV CLICK (mobile) ───
 navLinks.forEach(l => l.addEventListener('click', () => {
   if (window.innerWidth <= 900) {
     sidebar.classList.remove('open');
